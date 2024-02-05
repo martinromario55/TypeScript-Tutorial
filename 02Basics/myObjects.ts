@@ -20,4 +20,15 @@ function createCourse(): { name: string; price: number } {
 let newUser = { name: 'John', isPaid: false, email: 'john@jd.com' }
 createUser(newUser)
 
+// Type Aliases
+type User = {
+  name: string
+  email: string
+  isActive: boolean
+}
+
+function createTopUser(user: User) {}
+
+createTopUser({ name: '', email: '', isActive: true })
+
 export {}
