@@ -25,3 +25,20 @@ function printAll(strs: string | string[] | null) {
     }
   }
 }
+
+interface UserTwo {
+  name: string
+  email: string
+}
+
+interface Admin {
+  name: string
+  email: string
+  isAdmin: boolean
+}
+
+function isAdminAcc(acccount: UserTwo | Admin) {
+  if ('isAdmin' in acccount) {
+    return acccount.isAdmin
+  }
+}

@@ -26,3 +26,8 @@ function printAll(strs) {
         }
     }
 }
+function isAdminAcc(acccount) {
+    if ('isAdmin' in acccount) {
+        return acccount.isAdmin;
+    }
+}
