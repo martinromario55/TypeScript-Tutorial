@@ -9,7 +9,7 @@
 // }
 
 class User {
-  private _courseCount = 1
+  protected _courseCount = 1
 
   private readonly city: string = 'Kampala'
   constructor(public email: string, public name: string) {}
@@ -38,3 +38,11 @@ const htc = new User('htc@h.com', 'htc')
 // htc.city = 'Nairobi'
 
 // htc.deleteToken()
+
+// Inheritance - Protected
+class SubUser extends User {
+  isFamily: boolean = true
+  changeCourseCount() {
+    this._courseCount = 2
+  }
+}

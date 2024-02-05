@@ -34,3 +34,13 @@ class User {
 const htc = new User('htc@h.com', 'htc');
 // htc.city = 'Nairobi'
 // htc.deleteToken()
+// Inheritance - Protected
+class SubUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 2;
+    }
+}
