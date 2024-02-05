@@ -38,3 +38,37 @@ const getSearchProducts2 = <T>(products: T[]): T => {
   const myIndex = 3
   return products[myIndex]
 }
+
+// Advanced Generics
+interface Database {
+  connection: string
+  username: string
+  password: string
+}
+function anotherFunction<T, U extends Database>(valOne: T, valTwo: U): object {
+  return {
+    valOne,
+    valTwo,
+  }
+}
+
+// anotherFunction(3, {})
+
+interface Quiz {
+  name: string
+  type: string
+}
+
+interface Course {
+  name: string
+  author: string
+  subject: string
+}
+
+class sellable<T> {
+  public cart: T[] = []
+
+  addToCart(product: T) {
+    this.cart.push(product)
+  }
+}
