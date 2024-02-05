@@ -8,8 +8,19 @@ interface UserInt {
   getCoupon(couponname: string, value: number): number
 }
 
+// Reopenning the interface
+interface UserInt {
+  githubToken: string
+}
+
+// Interface extension
+interface Admin extends UserInt {
+  role: 'admin' | 'ta' | 'learner'
+}
+
 const htuser: UserInt = {
   dbId: 22,
+  githubToken: 'github',
   email: 'h@h.com',
   userId: 224423,
   startTrail: () => 'trial started',
