@@ -11,4 +11,4 @@ type User = [number, string]
 const newUser: User = [112, 'email']
 
 newUser[1] = 'hdsfd'
-newUser.push(true)
+// newUser.push(true)
