@@ -15,3 +15,15 @@ function identityFour(val) {
     return val;
 }
 // identityFour<Bottle>({})
+// Generic Arrays
+function getSearchProducts(products) {
+    // do something
+    const myIndex = 3;
+    return products[myIndex];
+}
+// Generic Arrow functions
+const getSearchProducts2 = (products) => {
+    // do something
+    const myIndex = 3;
+    return products[myIndex];
+};

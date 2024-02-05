@@ -24,3 +24,17 @@ interface Bottle {
 }
 
 // identityFour<Bottle>({})
+
+// Generic Arrays
+function getSearchProducts<T>(products: T[]): T {
+  // do something
+  const myIndex = 3
+  return products[myIndex]
+}
+
+// Generic Arrow functions
+const getSearchProducts2 = <T>(products: T[]): T => {
+  // do something
+  const myIndex = 3
+  return products[myIndex]
+}
