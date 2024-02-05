@@ -36,4 +36,4 @@ const data3: (string | number | boolean)[] = ['1', 2, true]
 let seatAllotment: 'aisle' | 'middle' | 'window'
 
 seatAllotment = 'aisle'
-seatAllotment = 'crew'
+// seatAllotment = 'crew'
